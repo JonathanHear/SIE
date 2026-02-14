@@ -1,0 +1,286 @@
+\documentclass[12pt]{article}
+
+% :D 
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{amsmath,amssymb}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  pdftitle={SIE Products and Their Risks},
+  pdfauthor={Jonathan Hear},
+  pdfsubject={SIE Exam Focused Study Guide}
+}
+
+\setlist[itemize]{leftmargin=1.1em}
+\setlist[enumerate]{leftmargin=1.4em}
+
+
+
+
+
+\title{SIE Study Guide\\Understanding Products and Their Risks (44\%)\\Ch. 3, 4, 5, 7, 8, 9, 10, 20}
+\author{Johny Hear}
+\date{EXAM: THURSDAY FEB. 19}
+\begin{document}
+\maketitle
+\tableofcontents \bigbreak
+\textbf{This study guide does not cover all content that is in the STC booklet(s), on-demands, study manual, etc. but you can consider it an extension of the crunch time facts but focused on the topics that we will be tested most on (understanding products and their risks) The source code will be included in my Github repository in .tex format if you would like to make any changes (I recommend OverLeaf for editing).}
+\newpage
+
+
+
+
+
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Chapter 3: Investment Companies}
+\subsection{Open-End (Mutual) Funds}
+\begin{itemize}
+  \item \textbf{Structure:} Issue \emph{redeemable} shares; bought or redeemed directly with the fund at \textbf{forward-priced NAV} once per day.
+  \item \textbf{Trading:} No intraday secondary trading; cannot short the fund.
+  \item \textbf{Share Classes/Loads:}
+    \begin{itemize}
+      \item Class A: front-end load; \textbf{breakpoints} eligible; ROA/LOI may reduce sales charge (LOI active for \(\approx\) 13 months).
+      \item Class B: back-end (CDSC); convert to A over time; generally higher ongoing expenses early on.
+      \item Class C: level load; best suited for shorter holding periods.
+    \end{itemize}
+    \textbf{Expense Ratio:} To determine the amount that a fund charges its shareholders each year for operating the fund a person should examine the \textbf{expense ratio}
+  \item \textbf{12b-1 fees:} Marketing/distribution; increase ongoing cost.
+    \begin{itemize}
+        \item Printing Expenses
+        \item Trailing Commissions
+        \item Radio Advertising Costs
+        \item Billboads on the roadside
+    \end{itemize}
+  \begin{description}
+      \centering\item[\textbf{MANAGEMENT FEES DO NOT COUNT AS 12b-1}] 
+      \bigbreak
+  \end{description} 
+ \bigbreak
+
+  \item \textbf{Key Rule:} \emph{Selling dividends is prohibited} (NAV already reflects distributions).
+  \item \textit{Investment Advisers (IA's) are paid based on the Assets Under Management (AUM)}
+  \item A mutual fund may have an "statement of additional information" this is REQUIRED to be sent to any interested party that \textbf{requests} it. 
+
+\end{itemize}
+
+\subsection{Closed-End Funds (CEFs)}
+\begin{itemize}
+  \item \textbf{Structure:} Offer a \emph{fixed} number of shares in an IPO; then trade intraday on exchanges.
+  \item \textbf{Pricing:} Market-driven; may trade at a \textbf{premium or discount} to NAV.
+  \item \textbf{Flexibility:} Can use \textbf{leverage}; can be bought on margin and sold short by investors.
+  \item \textbf{FOR A CUSTOMER A C.E Fund WILL BE CHARGED AS THE STOCK PRICE (NAV) PLUS COMMISSION... NOT SALES PRICE} \
+  \item \textbf{CLOSED END FUNDS ARE NOT ABLE TO BE LIQUIDATED. THEY CAN BE LISTED BACK ON THE MARKET FOR TRADING BUT IF U SEE SOMETHING SAY SOMETHING ABOUT A CLOSED END FUND GETTING REDEEMED OR LIQUIDATED EARLY YOU SHOULD KNOW THAT IT PROBABLY IS NOT HAPPENING.}
+\end{itemize}
+
+\subsection{Exchange-Traded Funds (ETFs)}
+\begin{itemize}
+  \item \textbf{Trading:} Trade intraday like stocks; typically lower expenses (index-based).
+  \item \textbf{Tax Efficiency:} Creation/redemption in-kind often reduces taxable distributions versus mutual funds.
+  \item \textbf{Margin/Shorting:} Generally allowed at the investor level.
+\end{itemize}
+
+\subsection{Unit Investment Trusts (UITs)}
+\begin{itemize}
+  \item \textbf{Portfolio:} Fixed (not actively managed).
+  \item \textbf{Units:} \emph{Redeemable} with the trust; trust \emph{self-liquidates} on a set date.
+  \item \emph{"Buy low then let it grow"}
+\end{itemize}
+
+% 
+\section{Chapter 4: Other Managed Products}
+\subsection{REITs (Real Estate Investment Trusts)}
+\begin{itemize}
+  \item \textbf{Tax Feature:} Distribute \(\geq\) 90\% of taxable income to avoid corporate-level tax on that income.
+  \item \textbf{Trading:} Many are exchange-traded (liquid); non-traded REITs are \textbf{illiquid} and carry valuation/fee complexity.
+  \item \textbf{Losses:} REITs pass through \textbf{income}, not losses.
+\end{itemize}
+
+\subsection{BDCs (Business Development Companies)}
+\begin{itemize}
+  \item Closed-end vehicles investing in small/mid-market or distressed firms.
+  \item \textbf{Risks:} Higher credit risk, potential \textbf{liquidity} and \textbf{market} risk; often higher yields.
+\end{itemize}
+
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Chapter 5: Derivatives (Options Basics)}
+\subsection{Rights and Obligations}
+\begin{itemize}
+  \item \textbf{Calls:} Right to \emph{buy}. Long call = right (pay premium); short call = obligation (receive premium, potentially unlimited risk).
+  \item \textbf{Puts:} Right to \emph{sell}. Long put = right; short put = obligation (downside: stock could go to 0).
+\end{itemize}
+
+\subsection{Protective Strategies (SIE-Level)}
+\begin{itemize}
+  \item \textbf{Protective Put} (Long Stock + Long Put): Downside hedge; \textbf{breakeven} = stock cost + put premium.
+  \item \textbf{Protective Call} (Short Stock + Long Call): Caps upside loss on short; \textbf{breakeven} = short sale proceeds $-$ call premium.
+\end{itemize}
+
+\subsection{Account Documents \& Basics}
+\begin{itemize}
+  \item \textbf{OCC Disclosure} must be delivered prior to trading; \textbf{options agreement} signed/returned (typically within 15 days) after approval.
+\end{itemize}
+
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Chapter 7: Equity Securities}
+\subsection{Common vs. Preferred}
+\begin{itemize}
+  \item \textbf{Common:} Voting rights, residual claim, growth potential; subject to market/business risk.
+  \item \textbf{Preferred:} Dividend priority, generally no voting; \textbf{interest-rate sensitivity}; may be cumulative, participating, convertible, or callable.
+\end{itemize}
+
+\subsection{American Depositary Receipts (ADR's)}
+\begin{itemize}
+  \item U.S.-traded certificates for foreign shares; introduce \textbf{currency risk} and foreign market risk.
+  \item Keywords to look for are...
+  \begin{itemize}
+      \item \textit{"Other countries... yadayada}
+      \item \textit{"Trade in the United States... yadayadayada"}
+  \end{itemize}
+  \item Do \textbf{\large NOT} confuse ADR's with Bankers Acceptances...
+  \end{itemize}
+  
+\subsection{Bankers Acceptances (BA's)}
+  \begin{itemize}
+  \item \textbf{BA's are money market instruments}; Short-term debt guarantees used primarily in trade finance.
+    \item White AMERICAN DEPOSIT RECEIPTS facilitate \textbf{investments} in foreign companies; BANKERS ACCEPTANCES facilitate \textbf{financing} transactions.
+  \end{itemize}
+
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Chapter 8: Debt Securities}
+\subsection{Corporate Bonds}
+\begin{itemize}
+  \item \textbf{Secured vs. Unsecured:} E.g., equipment trust certificates (secured) vs. \textbf{debentures} (unsecured).
+  \item \textbf{Callable Bonds:} Issuer may redeem early; \textbf{call premium} = amount above par paid upon call; reinvestment risk for investors.
+  \item \textbf{Convertibles:} Lower coupon; equity upside via conversion; price linked to stock.
+\end{itemize}
+
+\subsection{U.S. Government and Agencies}
+\begin{itemize}
+  \item \textbf{Treasuries:} Bills (discount), Notes, Bonds; interest is \textbf{taxable at federal}, \emph{exempt at state/local}.
+  \item \textbf{MBS/Pass-throughs:} GNMA (explicit), FNMA/FHLMC (implied); monthly payments include \emph{interest + principal}; \textbf{prepayment/reinvestment} risk.
+\end{itemize}
+
+\subsection{Municipal Bonds}
+\begin{itemize}
+  \item \textbf{Interest:} Generally \emph{federally tax-exempt}; state tax treatment varies.
+  \item \textbf{VRDOs:} Put feature; tender at \textbf{par + accrued interest}; rate resets frequently.
+  \item \textbf{ARS:} Long-term with auction rate resets; \textbf{no put}; liquidity risk if auctions fail.
+\end{itemize}
+
+\subsection{Bond Risk Summary}
+\begin{itemize}
+  \item \textbf{Interest-Rate Risk:} Prices fall when rates rise; longer duration = more sensitivity.
+  \item \textbf{Credit Risk:} Default risk (corporates, high yield).
+  \item \textbf{Reinvestment Risk:} Coupon cash flows reinvested at \textbf{lower} rates.
+  \item \textbf{Inflation (Purchasing Power) Risk:} Fixed coupons lose real value if inflation rises.
+  \item \textbf{Call Risk:} Higher when rates fall; proceeds may be reinvested at lower rates.
+\end{itemize}
+
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Chapter 9: Packaged/Insurance Products}
+\subsection{Variable Annuities}
+\begin{itemize}
+  \item \textbf{Separate Account} invests in subaccounts (security aspect).
+  \item \textbf{Accumulation Period:} \emph{Surrender charges} may apply; fees: mortality \& expense, admin, management.
+  \item \textbf{Taxation:} Earnings taxed as \textbf{ordinary income} upon withdrawal; 10\% penalty on taxable portion if under 59.5 (unless exception).
+\end{itemize}
+
+\subsection{Fixed Annuities}
+\begin{itemize}
+  \item \textbf{Not} securities; insurer bears investment risk; \textbf{inflation risk} for the customer due to fixed payments.
+\end{itemize}
+
+\subsection{Target-Date Funds}
+\begin{itemize}
+  \item Glide path \emph{typically} reduces equity exposure over time; \textbf{not guaranteed}, still subject to market risk.
+\end{itemize}
+
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Chapter 10: Hedge Funds and Alternatives}
+\begin{itemize}
+  \item \textbf{Investors:} Accredited/qualified; lighter disclosure than mutual funds.
+  \item \textbf{Strategies:} Leverage, shorting, derivatives, relative value, macro, event-driven.
+  \item \textbf{Risks:} \textbf{Liquidity risk} (lock-ups, gates), strategy risk, leverage risk; \textbf{fees} often ``2 and 20''.
+  \item \textbf{Suitability:} Not appropriate for most retail; long horizons and high risk tolerance.
+\end{itemize}
+\hrulefill
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Chapter 20: Risk Framework}
+\subsection{Core Risks to Memorize}
+\begin{itemize}
+  \item \textbf{Market Risk:} Broad price movements; affects equities, funds, ETFs.
+  \item \textbf{Interest-Rate Risk:} Bond prices vs. yields; long duration most sensitive.
+  \item \textbf{Credit/Default Risk:} Issuer’s ability to pay; higher in high-yield bonds.
+  \item \textbf{Liquidity Risk:} Difficulty selling at/near fair value (non-traded REITs, private placements, hedge funds).
+  \item \textbf{Inflation Risk:} Fixed payments lose purchasing power (fixed annuities, long bonds).
+  \item \textbf{Reinvestment Risk:} Coupons/principal returned when rates are lower (callable bonds, MBS).
+  \item \textbf{Currency Risk:} ADRs/international funds exposed to FX moves.
+\end{itemize}
+
+\subsection{Suitability Quick-Match}
+\begin{itemize}
+  \item \textbf{Growth:} Common stock, equity funds, growth ETFs.
+  \item \textbf{Income:} Investment-grade bonds, bond funds, preferred stock.
+  \item \textbf{Capital Preservation:} Money market funds (not FDIC-insured), short-duration Treasuries.
+  \item \textbf{Tax-Free Income:} Municipal bonds (appropriate for higher tax brackets).
+  \item \textbf{Speculation:} Options, leveraged products, hedge funds (accredited only).
+\end{itemize}\\
+\pagebreak
+
+
+
+% SIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIESIE
+\section{Table Comparisons}
+\subsection*{Open-End vs. Closed-End vs. ETF vs. UIT}
+\textit{Mr. Samuel Donk did mention that \textbf{UIT's} aren't that important for the SIE but use your own discretion}
+\begin{longtable}{@{}p{3cm}p{5cm}p{7cm}@{}}
+\toprule
+\textbf{Product} & \textbf{How It Trades/Priced} & \textbf{Key Exam Angles / Risks}\\
+\midrule
+Open-End \\(Mutual Fund) & Buy/redeem at end-of-day \textbf{NAV}; no secondary trading & Breakpoints (Class A), 12b-1, forward pricing, no shorting; selling dividends prohibited.\\
+\midrule
+
+Closed-End Fund  & Exchange-traded intraday; can be bought on margin/shorted & Trades at \textbf{premium/discount} to NAV; may use leverage (\(\rightarrow\) higher volatility).\\
+\midrule
+
+ETF & Exchange-traded intraday; margin/short allowed & Creation/redemption in-kind \(\rightarrow\) \textbf{tax efficiency}; usually lower expenses.\\
+\midrule
+
+UIT & Redeemable units with trust; no active management & Fixed portfolio; \textbf{self-liquidates}; limited flexibility.\\
+\bottomrule
+
+\end{longtable}
+
+\subsection*{Debt \& Income Product Risks}
+\begin{longtable}{@{}p{4.2cm}p{11.1cm}@{}}
+
+\toprule
+\textbf{Product/Feature} & \textbf{Primary Risks to Note}\\
+\midrule
+Long-Term Fixed-Rate Bonds & Interest-rate risk, inflation risk, reinvestment risk, call risk (if callable).\\
+\midrule
+
+High-Yield Bonds \\(Junk Bonds) & Credit/default risk, price volatility; higher income compensates.\\
+\midrule
+
+MBS/Pass-Throughs & Prepayment and extension risk; reinvestment risk; monthly cash flow.\\
+\midrule
+VRDOs vs. ARS & VRDOs have \textbf{put at par + accrued}; ARS have no put and \textbf{liquidity risk} if auctions fail.\\
+\midrule
+
+Preferred Stock & Interest-rate sensitivity; call risk; lower growth participation vs. common.\\
+\bottomrule
+\end{longtable}
+
+
+
+
+
+\end{document}
